@@ -1,0 +1,395 @@
+.management {
+  display: flex;
+  justify-self: start;
+}
+
+/* 左侧 */
+.bg {
+  width: 256px;
+  background: #2a3139;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.logo h2 {
+  font-size: 16px;
+  text-align: left;
+  color: #bbbbbb;
+  padding-left: 30px;
+}
+
+.menu {
+  width: 100%;
+  background: #2a3139 !important;
+  padding-top: 16px;
+}
+
+.menu li {
+  font-size: 15px !important;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #2a3139 !important;
+}
+
+/* 右侧 */
+.content {
+  width: calc(100% - 256px);
+}
+
+.headMenu {
+  width: 100%;
+  height: 80px;
+  background: #2a3139;
+  padding-left: 30px;
+}
+
+.headMenu li {
+  line-height: 80px;
+  color: #bbbbbb;
+  font-size: 16px;
+}
+
+.headMenu li .anticon {
+  font-size: 16px;
+  padding: 5px;
+  background: #51565c;
+  border-radius: 5px;
+}
+
+.ant-menu-horizontal>.ant-menu-item::after {
+  border: 0 !important;
+}
+
+/* 面包屑 */
+.breadcrumb {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 30px;
+}
+
+.breadcrumb ol {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #bababa;
+}
+
+.breadcrumb .ant-breadcrumb li:last-child a {
+  color: #bababa;
+}
+
+.breadcrumb .ant-breadcrumb li:last-child a:hover {
+  color: #353535;
+}
+
+.breadcrumb .ant-breadcrumb-separator {
+  margin: 0 4px;
+}
+
+.breadcrumb h4 {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/* 内容共用 */
+.agreement {
+  background: #f5f5f5;
+  padding: 0px 20px;
+}
+.title {
+  width: 100%;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.title h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  margin: 0px;
+}
+
+.title h2 span {
+  background: #4e8bff;
+  color: #fdfffa;
+  border-radius: 100%;
+  padding: 3px 11px;
+  margin: 0 16px;
+}
+
+.title::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  width: calc(50% - 100px);
+  border-bottom: 2px dashed #e9e9e9;
+}
+
+.title:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0px;
+  width: calc(50% - 120px);
+  border-bottom: 2px dashed #e9e9e9;
+}
+
+.ant-form-item-label>label {
+  color: #666;
+}
+
+/* 协议主体 */
+.subAgreementForm {
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.subAgreementForm .ant-form-item-control-input-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subAgreementForm .ant-form-item-control {
+  margin-left: 6px;
+}
+
+.subAgreementForm .formText {
+  line-height: 32px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.subAgreementForm .formSelect {
+  width: 30%;
+}
+
+.subAgreementForm .formAmount,
+.subAgreementForm .ant-btn {
+  width: 100px;
+}
+
+.subAgreementForm .formInupt {
+  width: 35%;
+  margin-left: 10px;
+}
+
+.subAgreementForm .formIndex {
+  width: 100px;
+  text-align: left;
+}
+
+.subAgreementForm .ant-tag {
+  border: 1px solid #4e8bff;
+  margin-left: 10px;
+  line-height: 32px;
+  padding: 0 10px;
+  border-radius: 7px;
+  color: #4e8bff;
+  font-size: 14px;
+  background: #f2f8f8;
+}
+
+.subAgreementForm .ant-tag .ant-tag-close-icon {
+  margin-left: 20px;
+  color: #4e8bff;
+  font-size: 14px;
+}
+
+.ant-picker-suffix {
+  display: none;
+}
+
+.ant-picker {
+  width: calc(110px + 35%);
+}
+
+.subAgreementForm .ant-table-thead>tr>th {
+  padding: 12px 16px;
+  background: #f8f8f8;
+  color: #414141;
+}
+
+.subAgreementForm .ant-table-tbody>tr>td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 16px;
+  color: #414141;
+}
+
+.ant-table-thead>tr>th::before {
+  display: none;
+}
+
+.subAgreementForm .ant-table-wrapper {
+  padding-left: 6.5%;
+}
+
+/* 产品政策 */
+.productAdd {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.productAdd .addBtn {
+  background: #4e8bff;
+  height: 36px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  margin-right: 30px;
+}
+
+.productAdd h4 {
+  margin-bottom: 0;
+  margin-right: 30px;
+  line-height: 36px;
+  font-size: 15px;
+}
+
+.productContent {
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.productContent .product {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9e9e9;
+  padding: 10px 15px;
+}
+
+.product div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product div label {
+  margin-left: 36px;
+  line-height: 36px;
+}
+.product div .ant-btn{
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.product div .ant-btn span{
+ color: rgba(0, 0, 0, 0.85);
+}
+.product div p {
+  margin-bottom: 0px;
+  padding-left: 20px;
+  line-height: 36px;
+  color: #4e8bff;
+}
+.productContent .ant-table-wrapper{
+ margin-top: 20px;
+ }
+ .deleteBtn {
+  color: #ff9600;
+  border: 4px;
+  border: 1px solid #eee;
+ }
+ .productData{
+  padding: 0px 15px;
+ }
+.productData .ant-table-content{
+  border: 1px solid #eee;
+}
+.productData .ant-table-thead > tr > th{
+  padding: 10px 15px;
+  width: 14.28%;
+}
+.productData .ant-table-thead > tr > td{
+  padding: 10px 15px;
+  width: 14.28%;
+}
+.productContent .ant-select-show-arrow,
+.productContent .ant-select-multiple{
+ width: 100%;
+}
+.productData .productTwo .ant-table-thead > tr > th{
+  width: 12.5%;
+}
+/* 补充协议 */
+.addAgreement{
+  position: relative;
+  padding-bottom: 80px;
+}
+.addAgreement .ant-tabs-nav{
+  margin: 0px;
+}
+.addAgreement .ant-tabs-nav-list{
+  border: 1px solid #dfdfdf;
+  border-left: none;
+  border-bottom: none;
+}
+.addAgreement .ant-tabs-nav-list .ant-tabs-tab{
+  border-left: 1px solid #dfdfdf;
+  padding: 10px 20px !important;
+  background: #fff;
+  margin: 0;
+}
+.addAgreement .ant-tabs-ink-bar-animated{
+  display: none;
+}
+.addAgreement .ant-tabs-content-holder{
+  background: #fff;
+  padding-bottom: 30px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+}
+.ant-tabs-tabpane{
+  padding: 0px 20px;
+}
+.subAgreement{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.subAgreement h4{
+  margin: 0;
+  line-height: 32px;
+  font-size: 15px;
+  color: #333;
+}
+.textarea{
+ background: #f8f8f8;
+}
+.addAgreement .addBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #4e8bff;
+  height: 30px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+}
+
+/* 底部 */
+.managementBottom{
+  position: fixed;
+  bottom: 0px;
+  width: calc(100% - 256px);
+  height: 50px;
+  background: #fff;
+  padding-left: 20px;
+  line-height: 50px;
+}
+.managementBottom .addBtn{
+  background: #4e8bff;
+  height: 34px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
